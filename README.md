@@ -6,7 +6,7 @@ Just a repo to save our .js solved exercises
 ## Authors
 
 * **Alexsander Falccuci** - *Initial work* - [@alexfalcucc](https://github.com/alexfalcucc)
-* **Matheus Oliveira** - *Initial work* - [PurpleBooth](https://github.com/matheusho)
+* **Matheus Oliveira** - *Initial work* - [@matheusho](https://github.com/matheusho)
 
 
 ## License
