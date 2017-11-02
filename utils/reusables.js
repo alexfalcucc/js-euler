@@ -28,7 +28,7 @@ var range = function range_(start, end, step, offset) {
  * function to show the answer of the problem and made things easier to check
  */
 
-var check_answer = function check_answer_(problem) {
+var show_answer = function check_answer_(problem) {
   var command = 'yes Y | euler -c '+problem;
   var callback = exec(command,
     function (error, stdout, stderr) {
@@ -39,5 +39,5 @@ var check_answer = function check_answer_(problem) {
 
 module.exports = {
   range,
-  check_answer,
+  show_answer,
 };

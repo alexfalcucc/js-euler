@@ -6,6 +6,8 @@
  *
  */
 
+var utils = require('../utils/reusables.js');
+
 function add(a, b) {
     return a + b;
 }
@@ -20,4 +22,5 @@ function multiples(len) {
   return list.reduce(add, 0);
 }
 
-console.log(multiples(1000) === 233168);
+console.log(multiples(1000));
+console.log(utils.show_answer('01'));
