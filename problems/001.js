@@ -19,5 +19,6 @@ function multiples(len) {
   return list.reduce(utils.add, 0);
 }
 
+
 console.log(multiples(1000));
 console.log(utils.show_answer('01'));
