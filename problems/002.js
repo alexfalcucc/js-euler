@@ -13,9 +13,10 @@
  *
  */
 
+var utils = require('../utils/reusables.js');
+
 function main(argument) {
 
 }
 
-console.log();
-
+console.log(utils.check_answer('02'));
