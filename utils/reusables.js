@@ -2,7 +2,7 @@
 
 /**
  *
- * Reusebles functions cuz we are lazy to repeat ourselfs.
+ * Reusables functions cuz we are lazy to repeat ourselfs.
  *
  */
 
