@@ -3,7 +3,7 @@
 Just a repo to save our .js solved exercises.
 
 ## Dependencies
-[EulerPy]](https://github.com/iKevinY/EulerPy)
+[EulerPy](https://github.com/iKevinY/EulerPy)
 
 ```bash
 # please use to see the result of the problem
