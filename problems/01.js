@@ -6,11 +6,18 @@
  *
  */
 
-var utils = require("../utils/reusables.js");
-
-function multiples(m, len_) {
-  var list = utils.range(m, len_);
-  return list;
+function add(a, b) {
+    return a + b;
 }
 
-console.log(multiples(0, 10));
+function multiples(len) {
+  var list = [];
+  for (var i = 0, len; i < len; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      list.push(i)
+    }
+  }
+  return list.reduce(add, 0);
+}
+
+console.log(multiples(1000));
