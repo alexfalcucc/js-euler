@@ -8,9 +8,6 @@
 
 var utils = require('../utils/reusables.js');
 
-function add(a, b) {
-    return a + b;
-}
 
 function multiples(len) {
   var list = [];
@@ -19,7 +16,7 @@ function multiples(len) {
       list.push(i)
     }
   }
-  return list.reduce(add, 0);
+  return list.reduce(utils.add, 0);
 }
 
 console.log(multiples(1000));

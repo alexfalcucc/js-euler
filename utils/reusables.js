@@ -32,12 +32,21 @@ var show_answer = function check_answer_(problem) {
   var command = 'yes Y | euler -c '+problem;
   var callback = exec(command,
     function (error, stdout, stderr) {
-      console.log('stdout: ' + stdout);
+      console.log(stdout);
     });
-  return;
+  return "\n\n--------- EULER RESULT --------";
+}
+
+/**
+ * useful to use with reduce
+ */
+
+var add = function add(a, b) {
+  return a + b;
 }
 
 module.exports = {
   range,
   show_answer,
+  add,
 };
