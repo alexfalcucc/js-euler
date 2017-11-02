@@ -9,9 +9,10 @@
 var range = require("../utils/reusables.js");
 
 function multiples(m, len_) {
-  return range(m, len_)
+  var list = range(m, len_);
+  return list;
 }
 
 
 
-console.log(multiples(3, 10));
+console.log(multiples(0, 10));
