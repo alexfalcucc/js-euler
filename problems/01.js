@@ -20,4 +20,4 @@ function multiples(len) {
   return list.reduce(add, 0);
 }
 
-console.log(multiples(1000));
+console.log(multiples(1000) === 233168);
