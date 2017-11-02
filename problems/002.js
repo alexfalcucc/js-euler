@@ -15,8 +15,13 @@
 
 var utils = require('../utils/reusables.js');
 
-function main(argument) {
+/**
+ * link to reference: https://www.livescience.com/37470-fibonacci-sequence.html
+ */
+
+function fibonacci() {
 
 }
 
-console.log(utils.check_answer('02'));
+
+console.log(utils.show_answer('02'));
