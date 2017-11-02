@@ -13,6 +13,4 @@ function multiples(m, len_) {
   return list;
 }
 
-
-
 console.log(multiples(0, 10));
