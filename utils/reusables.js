@@ -1,12 +1,16 @@
-"use strict";
-
 /**
  *
  * Reusables functions cuz we are lazy to repeat ourselfs.
  *
  */
 
+"use strict";
+
 var exec = require('child_process').exec;
+
+/**
+ * similar with python's range function to generate lists
+ */
 
 var range = function range_(start, end, step, offset) {
   var len = (Math.abs(end - start) + ((offset || 0) * 2)) / (step || 1) + 1;
@@ -20,6 +24,9 @@ var range = function range_(start, end, step, offset) {
 
 }
 
+/**
+ * function to show the answer of the problem and made things easier to check
+ */
 
 var check_answer = function check_answer_(problem) {
   var command = 'yes Y | euler -c '+problem;
