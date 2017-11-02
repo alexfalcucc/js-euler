@@ -18,4 +18,6 @@ var range = function range_(start, end, step, offset) {
 
 }
 
-module.exports = range;
+module.exports = {
+  range,
+};

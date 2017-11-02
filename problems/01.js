@@ -6,10 +6,10 @@
  *
  */
 
-var range = require("../utils/reusables.js");
+var utils = require("../utils/reusables.js");
 
 function multiples(m, len_) {
-  var list = range(m, len_);
+  var list = utils.range(m, len_);
   return list;
 }
 
