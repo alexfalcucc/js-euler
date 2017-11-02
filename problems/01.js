@@ -5,6 +5,13 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  *
  */
-function main() {
 
+var range = require("../utils/reusables.js");
+
+function multiples(m, len_) {
+  return range(m, len_)
 }
+
+
+
+console.log(multiples(3, 10));
