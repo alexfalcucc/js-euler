@@ -19,9 +19,13 @@ var utils = require('../utils/reusables.js');
  * link to reference: https://www.livescience.com/37470-fibonacci-sequence.html
  */
 
-function fibonacci() {
-
+function fibonacci(n) {
+  var fib_list = [1, 2];
+  for (var i = 1, len = n; i < len; i++) {
+    fib_list.push(fib_list[i] + fib_list[i-1]);
+  }
 }
 
+console.log(fibonacci(10));
 
 console.log(utils.show_answer('02'));
