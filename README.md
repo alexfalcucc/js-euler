@@ -2,10 +2,11 @@
 
 Just a repo to save our .js solved exercises
 
-    ```bash
-    # please use to see the result of the problem
-    euler -c <problem>
-    ```
+```bash
+# please use to see the result of the problem
+euler -c <problem>
+```
+
 
 
 ## Authors
