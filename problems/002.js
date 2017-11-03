@@ -21,7 +21,6 @@ var utils = require('../utils/reusables.js');
 
 function fibonacci(n) {
   var fib_list = [1, 2];
-
   var i = 1;
   var next = 0;
 
@@ -37,8 +36,8 @@ function fibonacci(n) {
     fib_list.push(next);
     i+=1;
   }
-  return sum_.reduce(utils.add, 0)
 
+  return sum_.reduce(utils.add, 0)
 }
 
 
