@@ -7,12 +7,14 @@
  *
  * What is the largest prime factor of the number 600851475143?
  *
+ * link to reference: https://www.mathsisfun.com/prime-factorization.html
+ *
  */
 
 var utils = require('../utils/reusables.js');
 
-function main() {
-  return true;
+function prime(n) {
+  return n;
 }
 
-utils.show_answer('03', main());
+utils.show_answer('03', prime(600851475143));
