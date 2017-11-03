@@ -11,7 +11,6 @@ var exec = require('child_process').exec;
 /**
  * similar with python's range function to generate lists
  */
-
 var range = function range_(start, end, step, offset) {
   var len = (Math.abs(end - start) + ((offset || 0) * 2)) / (step || 1) + 1;
   var direction = start < end ? 1 : -1;
@@ -27,7 +26,6 @@ var range = function range_(start, end, step, offset) {
 /**
  * function to show the answer of the problem and made things easier to check
  */
-
 var show_answer = function check_answer_(problem, yours) {
   var command = 'yes Y | euler -c '+problem;
   var callback = exec(command,
@@ -41,7 +39,6 @@ var show_answer = function check_answer_(problem, yours) {
 /**
  * useful to use with reduce
  */
-
 var add = function add(a, b) {
   return a + b;
 }
