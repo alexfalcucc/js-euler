@@ -48,7 +48,15 @@ function is_prime(n) {
 }
 
 function factors(n) {
-  return n;
+  var i = 1;
+  var largest_prime = 1;
+  while (i <= n) {
+    if (n % i == 0 && is_prime(i)) {
+      largest_prime = i;
+    }
+    i+=1;
+  }
+  return largest_prime;
 }
 
 utils.show_answer('03', factors(600851475143));
