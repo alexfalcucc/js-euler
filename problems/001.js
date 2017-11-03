@@ -8,7 +8,6 @@
 
 var utils = require('../utils/reusables.js');
 
-
 function multiples(len) {
   var list = [];
   for (var i = 0, len; i < len; i++) {
