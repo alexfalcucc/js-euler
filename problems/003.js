@@ -13,6 +13,11 @@
 
 var utils = require('../utils/reusables.js');
 
+
+function is_prime(n) {
+  return true
+}
+
 function prime(n) {
   return n;
 }
