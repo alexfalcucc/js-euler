@@ -12,7 +12,7 @@
 var utils = require('../utils/reusables.js');
 
 function main() {
-
+  return true;
 }
 
 utils.show_answer('03', main());
