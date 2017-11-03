@@ -40,4 +40,4 @@ function fibonacci(n) {
   return sum_.reduce(utils.add, 0)
 }
 
-console.log(utils.show_answer('02', fibonacci(1000)));
+utils.show_answer('02', fibonacci(1000));

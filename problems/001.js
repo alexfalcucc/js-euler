@@ -19,4 +19,4 @@ function multiples(len) {
   return list.reduce(utils.add, 0);
 }
 
-console.log(utils.show_answer('01', multiples(1000)));
+utils.show_answer('01', multiples(1000));
