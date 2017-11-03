@@ -9,6 +9,8 @@
  *
  * link to reference: https://www.mathsisfun.com/prime-factorization.html
  *
+ * prime solution based on python: https://stackoverflow.com/a/1801446/3659023
+ *
  */
 
 var utils = require('../utils/reusables.js');
