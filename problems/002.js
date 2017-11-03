@@ -21,11 +21,26 @@ var utils = require('../utils/reusables.js');
 
 function fibonacci(n) {
   var fib_list = [1, 2];
-  for (var i = 1, len = n; i < len; i++) {
-    fib_list.push(fib_list[i] + fib_list[i-1]);
+
+  var i = 1;
+  var next = 0;
+
+  // by default we`ll add the first product of 2
+  // since that it will not be in the list
+  var sum_ = [2];
+
+  while (next < 4000000) {
+    next = fib_list[i] + fib_list[i-1]
+    if (next % 2 == 0) {
+      sum_.push(next);
+    }
+    fib_list.push(next);
+    i+=1;
   }
+  return sum_.reduce(utils.add, 0)
+
 }
 
-console.log(fibonacci(10));
 
+console.log(fibonacci(1000));
 console.log(utils.show_answer('02'));
