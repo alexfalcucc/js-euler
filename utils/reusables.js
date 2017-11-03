@@ -28,11 +28,12 @@ var range = function range_(start, end, step, offset) {
  * function to show the answer of the problem and made things easier to check
  */
 
-var show_answer = function check_answer_(problem) {
+var show_answer = function check_answer_(problem, yours) {
   var command = 'yes Y | euler -c '+problem;
   var callback = exec(command,
     function (error, stdout, stderr) {
-      console.log(stdout);
+      var euler_result = stdout.split(' ');
+      console.log("Euler Result: "+euler_result[euler_result.length-1]+"yours: "+yours);
     });
   return "\n\n--------- EULER RESULT --------";
 }
