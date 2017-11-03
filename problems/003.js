@@ -14,6 +14,9 @@
 var utils = require('../utils/reusables.js');
 
 
+/**
+ * returns true is n is prime
+ */
 function is_prime(n) {
   if (n == 2) {
     return true
@@ -38,12 +41,9 @@ function is_prime(n) {
 
     i += w
     w = 6 - w
-
   }
-
   return true
 }
-
 
 function factors(n) {
   return n;
