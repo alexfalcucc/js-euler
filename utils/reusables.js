@@ -1,7 +1,5 @@
 /**
- *
  * Reusables functions cuz we are lazy to repeat ourselfs.
- *
  */
 
 "use strict";
