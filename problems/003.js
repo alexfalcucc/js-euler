@@ -51,8 +51,14 @@ function factors(n) {
   var i = 1;
   var largest_prime = 1;
   while (i <= n) {
-    if (n % i == 0 && is_prime(i)) {
-      largest_prime = i;
+    if (n % i == 0) {
+      // when we divide the number with a divisor the
+      // performance took a good time, amazing.
+      n = n / i;
+      // just check if it's a prime factor.
+      if (is_prime(i)) {
+        largest_prime = i;
+      }
     }
     i+=1;
   }
