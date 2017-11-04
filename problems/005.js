@@ -33,7 +33,7 @@ var utils = require('../utils/reusables.js');
 function GCD(A, B) {
   while (B != 0) {
     A, B = B, A % B;
-    console.log(A, B);
+    console.log(A % B);
   }
   return A;
 }
@@ -43,7 +43,6 @@ function LCM(B) {
   for (var A in range_) {
     B = (range_[A]*B)/GCD(range_[A], B);
   }
-  console.log(B);
   return B;
 }
 
