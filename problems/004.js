@@ -12,25 +12,36 @@
 var utils = require('../utils/reusables.js');
 
 function is_palindrome(n) {
-  return true;
+  var palindrome = [],
+      possibility = n.toString();
+
+  for (var i = possibility.length-1, len = possibility.length; i >= 0; i--) {
+    palindrome.push(possibility[i]);
+  }
+
+  if (palindrome.join('') == n.toString()) {
+    return true
+  }
+
+  return false;
 }
 
-function main(dig) {
+function get_largest_palindrome(dig) {
   var n = 100,
       palindrome = 1;
 
   while (n.toString().length == dig) {
     for (var i = 100, len=999; i < len; i++) {
       prod = n * i;
-      if (is_palindrome(prod)) {
-
+      if (is_palindrome(prod) && prod > palindrome) {
+        palindrome = prod;
       }
     }
     n+=1;
   }
 
-  return true;
+  return palindrome;
 }
 
 var dig = 3;
-utils.show_answer('04', main(dig));
+utils.show_answer('04', get_largest_palindrome(dig));
