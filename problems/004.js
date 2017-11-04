@@ -19,11 +19,7 @@ function is_palindrome(n) {
     palindrome.push(possibility[i]);
   }
 
-  if (palindrome.join('') == n.toString()) {
-    return true
-  }
-
-  return false;
+  return palindrome.join('') == n.toString() ? true : false
 }
 
 function get_largest_palindrome(dig) {
