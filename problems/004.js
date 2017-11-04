@@ -11,10 +11,18 @@
  */
 var utils = require('../utils/reusables.js');
 
-function main() {
+function main(dig) {
+  var n = 100,
+      numbers = [];
+
+  while (n.toString().length == 3) {
+    numbers.push(n+=1);
+  }
+
+  console.log(numbers);
+
   return true;
 }
 
-utils.show_answer('04', main());
-
-
+var dig = 3;
+utils.show_answer('04', main(dig));
