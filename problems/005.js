@@ -12,8 +12,16 @@
  */
 var utils = require('../utils/reusables.js');
 
-function main() {
+function main(number) {
+  var i = 1;
+  var n_range = utils.range(1, 10);
+  while (i <= number) {
+    for (var n in n_range) {
+      n_range[n];
+    }
+    i+=1;
+  }
   return true;
 }
 
-utils.show_answer('05', main());
+utils.show_answer('05', main(100));
