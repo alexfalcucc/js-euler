@@ -12,16 +12,30 @@
  */
 var utils = require('../utils/reusables.js');
 
-function main(number) {
-  var i = 1;
-  var n_range = utils.range(1, 10);
-  while (i <= number) {
+function main(limit) {
+  var i = 1,
+    n_range = utils.range(1, limit),
+    divisible = 1,
+    divisibles = [];
+
+  while (true) {
+    var is_divisible = false;
     for (var n in n_range) {
-      n_range[n];
+      if (i % n_range[n] != 0) {
+        divisibles = [];
+        continue;
+      } else {divisibles.push(true)}
     }
+
+    if (divisibles.length == limit) {
+      divisible = i;
+      break;
+    }
+
     i+=1;
+
   }
-  return true;
+  return divisible;
 }
 
-utils.show_answer('05', main(100));
+utils.show_answer('05', main(20));
