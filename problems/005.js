@@ -12,8 +12,6 @@
  */
 var utils = require('../utils/reusables.js');
 
-
-
 /**
  * OPTMIZED SOLUTION
  *
@@ -29,6 +27,29 @@ var utils = require('../utils/reusables.js');
  * LCM(A,B) = (A * B)/GCD(A*B)
  *
  * GCD(A, B) = GCD (B, A mod B)
+ *
+ */
+
+function GCD(A, B) {
+  while (B != 0) {
+    A, B = B, A % B;
+    console.log(A, B);
+  }
+  return A;
+}
+
+function LCM(B) {
+  var range_ = utils.range(1, B);
+  for (var A in range_) {
+    B = (range_[A]*B)/GCD(range_[A], B);
+  }
+  console.log(B);
+  return B;
+}
+
+
+/**
+ * NOT OPTMIZED SOUTION
  *
  */
 
@@ -55,4 +76,4 @@ function leastDivisor(limit) {
   return divisible;
 }
 
-utils.show_answer('05', leastDivisor(20));
+utils.show_answer('05', LCM(20));
