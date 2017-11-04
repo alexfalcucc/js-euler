@@ -12,16 +12,14 @@
 var utils = require('../utils/reusables.js');
 
 function main(dig) {
-  var initial_n = 100,
-      numbers = [];
+  var n = 100;
 
-  while (initial_n.toString().length == 3) {
-    numbers.push(initial_n+=1);
+  while (n.toString().length == dig) {
+    for (var i = 100, len=999; i < len; i++) {
+      prod = n * i;
+    }
+    n+=1;
   }
-  for (var i in numbers) {
-    numbers[i];
-  }
-
 
   return true;
 }
