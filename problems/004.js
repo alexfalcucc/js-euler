@@ -11,12 +11,20 @@
  */
 var utils = require('../utils/reusables.js');
 
+function is_palindrome(n) {
+  return true;
+}
+
 function main(dig) {
-  var n = 100;
+  var n = 100,
+      palindrome = 1;
 
   while (n.toString().length == dig) {
     for (var i = 100, len=999; i < len; i++) {
       prod = n * i;
+      if (is_palindrome(prod)) {
+
+      }
     }
     n+=1;
   }
