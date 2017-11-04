@@ -13,31 +13,6 @@
 var utils = require('../utils/reusables.js');
 
 
-function least_divisor(limit) {
-  var i = 1,
-    n_range = utils.range(1, limit),
-    divisible = 1,
-    divisibles = [];
-
-  while (true) {
-    var is_divisible = false;
-    for (var n in n_range) {
-      if (i % n_range[n] != 0) {
-        divisibles = [];
-        continue;
-      } else {divisibles.push(true)}
-    }
-
-    if (divisibles.length == limit) {
-      divisible = i;
-      break;
-    }
-
-    i+=1;
-
-  }
-  return divisible;
-}
 
 /**
  * OPTMIZED SOLUTION
@@ -57,4 +32,27 @@ function least_divisor(limit) {
  *
  */
 
-utils.show_answer('05', least_divisor(20));
+function leastDivisor(limit) {
+  var i = 1,
+    n_range = utils.range(1, limit),
+    divisible = 1,
+    divisibles = [];
+
+  while (true) {
+    for (var n in n_range) {
+      if (i % n_range[n] != 0) {
+        divisibles = [];
+        continue;
+      } else {divisibles.push(true)}
+    }
+
+    if (divisibles.length == limit) {
+      divisible = i;
+      break;
+    }
+    i+=1;
+  }
+  return divisible;
+}
+
+utils.show_answer('05', leastDivisor(20));
