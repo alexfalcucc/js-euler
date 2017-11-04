@@ -39,5 +39,4 @@ function get_largest_palindrome(dig) {
   return palindrome;
 }
 
-var dig = 3;
-utils.show_answer('04', get_largest_palindrome(dig));
+utils.show_answer('04', get_largest_palindrome(3));
