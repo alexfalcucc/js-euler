@@ -12,7 +12,8 @@
  */
 var utils = require('../utils/reusables.js');
 
-function main(limit) {
+
+function least_divisor(limit) {
   var i = 1,
     n_range = utils.range(1, limit),
     divisible = 1,
@@ -38,4 +39,22 @@ function main(limit) {
   return divisible;
 }
 
-utils.show_answer('05', main(20));
+/**
+ * OPTMIZED SOLUTION
+ *
+ *
+ * LCM
+ * ======
+ * Least Common Divisor (LCM) of numbers A and B,
+ * is a number which is the least number divisible by both A & B.
+ * Moreover LCM (A, B, C) = LCM (LCM (A, B), C) and so on.
+ *
+ * > Relation between LCM and GCD
+ *
+ * LCM(A,B) = (A * B)/GCD(A*B)
+ *
+ * GCD(A, B) = GCD (B, A mod B)
+ *
+ */
+
+utils.show_answer('05', least_divisor(20));
