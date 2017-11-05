@@ -9,5 +9,11 @@
  * What is the 10001st prime number?
  *
  */
+var utils = require('../utils/reusables.js');
 
+function foo() {
+  return true
+}
+
+utils.show_answer('07', foo());
 
