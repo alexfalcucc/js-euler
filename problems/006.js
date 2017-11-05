@@ -18,8 +18,16 @@
  */
 var utils = require('../utils/reusables.js');
 
-function foo() {
-  return true;
+function foo(limit) {
+  var range_ = utils.range(1, limit);
+  var natual_sum;
+  var natuals = [];
+  for (var i in range_) {
+    range_[i];
+    natuals.push(Math.pow(range_[i], 2));
+  }
+  natual_sum = natuals.reduce(utils.add, 0)
+  return natual_sum;
 }
 
-utils.show_answer('06', foo());
+utils.show_answer('06', foo(10));
