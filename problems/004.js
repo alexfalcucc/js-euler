@@ -16,12 +16,11 @@ function is_palindrome(n) {
   return reversed == n.toString() ? true : false
 }
 
-function get_largest_palindrome(dig) {
-  var n = 100,
-      palindrome = 1;
+function get_largest_palindrome(dig, n, limit) {
+  var palindrome = 1;
 
   while (n.toString().length == dig) {
-    for (var i = 100, len=999; i < len; i++) {
+    for (var i = n, len=limit; i < len; i++) {
       prod = n * i;
       if (is_palindrome(prod) && prod > palindrome) {
         palindrome = prod;
@@ -33,4 +32,4 @@ function get_largest_palindrome(dig) {
   return palindrome;
 }
 
-utils.show_answer('04', get_largest_palindrome(3));
+utils.show_answer('04', get_largest_palindrome(3, 100, 999));
