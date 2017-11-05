@@ -13,7 +13,7 @@
 var utils = require('../utils/reusables.js');
 
 /**
- * NOT OPTMIZED SOUTION
+ * NOT OPTMIZED SOLUTION
  *
  */
 function leastDivisor(limit) {
