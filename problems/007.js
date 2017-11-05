@@ -16,4 +16,3 @@ function foo() {
 }
 
 utils.show_answer('07', foo());
-
