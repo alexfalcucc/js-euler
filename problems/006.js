@@ -19,6 +19,7 @@
 var utils = require('../utils/reusables.js');
 
 function foo() {
+  return true;
 }
 
 utils.show_answer('06', foo());
