@@ -19,8 +19,8 @@
 var utils = require('../utils/reusables.js');
 
 function foo(limit) {
-  var range_ = utils.range(1, limit);
   var natuals = [];
+  var range_ = utils.range(1, limit);
   for (var i in range_) {
     range_[i];
     natuals.push(Math.pow(range_[i], 2));
