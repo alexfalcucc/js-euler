@@ -12,14 +12,8 @@
 var utils = require('../utils/reusables.js');
 
 function is_palindrome(n) {
-  var palindrome = [],
-      possibility = n.toString();
-
-  for (var i = possibility.length-1, len = possibility.length; i >= 0; i--) {
-    palindrome.push(possibility[i]);
-  }
-
-  return palindrome.join('') == n.toString() ? true : false
+  var reversed = (n+'').split('').reverse().join('')
+  return reversed == n.toString() ? true : false
 }
 
 function get_largest_palindrome(dig) {
