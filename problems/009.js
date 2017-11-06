@@ -16,7 +16,8 @@
 var utils = require('../utils/reusables.js');
 
 function foo() {
-  return true;
+  console.log(Math.sqrt(10000));
+  return Math.pow(10, 2);
 }
 
 utils.show_answer('09', foo());

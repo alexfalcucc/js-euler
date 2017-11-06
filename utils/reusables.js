@@ -1,8 +1,8 @@
+"use strict";
+
 /**
  * Reusables functions cuz we are lazy to repeat ourselfs.
  */
-
-"use strict";
 
 var exec = require('child_process').exec;
 
