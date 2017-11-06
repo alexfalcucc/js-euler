@@ -3,6 +3,8 @@
  * Project Euler Problem 8
  * =======================
  *
+ * The four adjacent digits in the 1000-digit number that have the
+ * greatest product are 9 × 9 × 8 × 9 = 5832.
  * Find the greatest product of thirteen
  * consecutive digits in the 1000-digit number.
  *
@@ -52,8 +54,24 @@ function foo() {
     84580156166097919133875499200524063689912560717606
     05886116467109405077541002256983155200055935729725
     71636269561882670428252483600823257530420752963450
-  `;
-  return numbers;
+  `.trim().replace(/\s/g,'');
+
+  var i = 0;
+  var greatest_product = 0;
+  while (i <= numbers.length - 13) {
+    consecutive = numbers.slice(i, i+13);
+    consecutive_list = consecutive.split('');
+    product = consecutive_list.reduce(
+      function(a, b){
+        return parseInt(a) * parseInt(b);
+      }
+    );
+    greatest_product = (
+      product > greatest_product ? product : greatest_product
+    );
+    i+=1;
+  }
+  return greatest_product;
 }
 
 utils.show_answer('08', foo());

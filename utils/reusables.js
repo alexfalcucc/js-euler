@@ -41,6 +41,10 @@ var add = function add(a, b) {
   return a + b;
 }
 
+var multiply = function multiply(a, b) {
+  return parseInt(a) + parseInt(b);
+}
+
 /**
  * returns true is n is prime
  */
@@ -76,5 +80,6 @@ module.exports = {
   range,
   show_answer,
   add,
+  multiply,
   is_prime,
 };
