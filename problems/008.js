@@ -57,19 +57,15 @@ function foo() {
   `.trim().replace(/\s/g,'');
 
   var i = 0;
-  var greatest_product = 0;
+  var greatest = 0;
   while (i <= numbers.length - 13) {
     consecutive = numbers.slice(i, i+13);
     consecutive_list = consecutive.split('');
-    product = consecutive_list.reduce(
-      (a, b) => parseInt(a) * parseInt(b)
-    );
-    greatest_product = (
-      product > greatest_product ? product : greatest_product
-    );
+    product = consecutive_list.reduce(utils.multiply);
+    greatest = product > greatest ? product : greatest;
     i+=1;
   }
-  return greatest_product;
+  return greatest;
 }
 
 utils.show_answer('08', foo());
