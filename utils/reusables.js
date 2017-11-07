@@ -37,9 +37,7 @@ var show_answer = function check_answer_(problem, yours) {
 /**
  * useful to use with reduce
  */
-var add = function add(a, b) {
-  return a + b;
-}
+var add = (a, b) => a + b;
 
 var multiply = function multiply(a, b) {
   return parseInt(a) + parseInt(b);
