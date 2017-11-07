@@ -62,9 +62,7 @@ function foo() {
     consecutive = numbers.slice(i, i+13);
     consecutive_list = consecutive.split('');
     product = consecutive_list.reduce(
-      function(a, b){
-        return parseInt(a) * parseInt(b);
-      }
+      (a, b) => parseInt(a) * parseInt(b)
     );
     greatest_product = (
       product > greatest_product ? product : greatest_product

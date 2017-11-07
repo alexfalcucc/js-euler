@@ -39,6 +39,8 @@ var show_answer = function check_answer_(problem, yours) {
  */
 var add = (a, b) => a + b;
 
+var multiply = (a, b) => (a) *(b);
+
 var multiply = function multiply(a, b) {
   return parseInt(a) + parseInt(b);
 }
