@@ -19,3 +19,7 @@ function multiples(len) {
 }
 
 utils.show_answer('01', multiples(1000));
+
+module.exports = {
+  multiples
+};
