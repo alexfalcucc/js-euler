@@ -15,7 +15,6 @@ euler -c <problem>
 ## Authors
 
 * **Alexsander Falccuci** - *Initial work* - [@alexfalcucc](https://github.com/alexfalcucc)
-* **Matheus Oliveira** - *Initial work* - [@matheusho](https://github.com/matheusho)
 
 
 ## License
