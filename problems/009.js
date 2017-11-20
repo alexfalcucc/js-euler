@@ -15,9 +15,20 @@
  */
 var utils = require('../utils/reusables.js');
 
+/**
+ * we could do a research and we find a formula:
+ * https://en.wikipedia.org/wiki/Pythagorean_triple#Proof_of_Euclid.27s_formula
+ *
+ * @param {a} this is the 1st unknown variable
+ * @param {b} this is the 2nd unknown variable
+ * @param {c} this is the 3rd unknown variable
+ *
+ * @return {sum} sum of all variables
+ *
+ */
 function foo() {
-  console.log(Math.sqrt(10000));
-  return Math.pow(10, 2);
+  return true;
 }
+
 
 utils.show_answer('09', foo());
