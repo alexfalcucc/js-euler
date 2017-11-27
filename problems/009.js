@@ -23,12 +23,18 @@ var utils = require('../utils/reusables.js');
  * @param {b} this is the 2nd unknown variable
  * @param {c} this is the 3rd unknown variable
  *
+ * basically the rule is a = m² - n², b = mn, c = m² + n²
+ *
  * @return {sum} sum of all variables
  *
  */
-function foo() {
-  return true;
+function calc_pythagorean(a, b, c) {
+  a = ((a * 2) - (b * 2))*2;
+  b = (2 * (a * b))*2;
+  return a + b;
 }
 
-
-utils.show_answer('09', foo());
+let a = 3,
+    b = 4,
+    c = 5;
+utils.show_answer('09', calc_pythagorean(a, b, c));
