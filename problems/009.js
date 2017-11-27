@@ -27,14 +27,26 @@ var utils = require('../utils/reusables.js');
  *
  * @return {sum} sum of all variables
  *
+ * just found a brute force on this post: http://www.mathblog.dk/pythagorean-triplets/
+ * that could help me to find the answer.
+ *
+ * as it says: "For the brute force algorithm we would need to loop over all the
+ * possible values of a and b, calculate c and check if that is a solution.
+ * We could be ignorant and just let a and b loop from 1-1000, or we could use
+ * the facts that a < b < c, and thus exploit that  a < s/3,  and a < b < s/2."
+ *
  */
 function calc_pythagorean(a, b, c) {
   a = ((a * 2) - (b * 2))*2;
   b = (2 * (a * b))*2;
-  return a + b;
+  limit = parseInt(Math.sqrt(1000/2));
+  return limi
+  t;
 }
+
 
 let a = 3,
     b = 4,
     c = 5;
+
 utils.show_answer('09', calc_pythagorean(a, b, c));
