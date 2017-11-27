@@ -36,17 +36,24 @@ var utils = require('../utils/reusables.js');
  * the facts that a < b < c, and thus exploit that  a < s/3,  and a < b < s/2."
  *
  */
-function calc_pythagorean(a, b, c) {
-  a = ((a * 2) - (b * 2))*2;
-  b = (2 * (a * b))*2;
-  limit = parseInt(Math.sqrt(1000/2));
-  return limi
-  t;
+function calc_pythagorean() {
+  let a = 0,
+      b = 0,
+      c = 0,
+      p = 0;
+
+  let s = 1000;
+  let found = false;
+  for (a = 1; a < s/3; a++) {
+    for (b=a; b < s/2; b++) {
+      c = s - a - b;
+      if (a * a + b * b === c * c) {
+        found = true;
+        p = a * b * c;
+      }
+    }
+  }
+  return p;
 }
 
-
-let a = 3,
-    b = 4,
-    c = 5;
-
-utils.show_answer('09', calc_pythagorean(a, b, c));
+utils.show_answer('09', calc_pythagorean());
