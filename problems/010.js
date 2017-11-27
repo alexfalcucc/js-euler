@@ -14,14 +14,12 @@ var utils = require('../utils/reusables.js');
 
 function foo(n) {
   var primes = [];
-  var i = 1;
-  while (primes.length <= 10001) {
+  for (var i = 2, len = 2000000; i < len; i++) {
     if (utils.is_prime(i)) {
       primes.push(i);
     }
-    i+=1;
   }
-  return true;
+  return primes.reduce(utils.add);
 }
 
 utils.show_answer('10', foo());
