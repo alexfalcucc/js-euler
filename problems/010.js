@@ -12,7 +12,15 @@
 
 var utils = require('../utils/reusables.js');
 
-function foo() {
+function foo(n) {
+  var primes = [];
+  var i = 1;
+  while (primes.length <= 10001) {
+    if (utils.is_prime(i)) {
+      primes.push(i);
+    }
+    i+=1;
+  }
   return true;
 }
 
